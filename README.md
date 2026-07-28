@@ -31,23 +31,83 @@
 
 ## 🚀 Quick Start
 
+### Development
+
 ```bash
-# 1. Clone de repository
 git clone https://github.com/chaitoe/familie-landveld.git
-cd familie-landveld-app
+cd familie-landveld
 
-# 2. Installeer dependencies
 npm install
-
-# 3. Maak .env.local aan (kopieer van .env.example)
-cp .env.example .env.local
-# Bewerk .env.local met eigen admin credentials
-
-# 4. Start de dev server
+cp .env.example .env.local   # edit with your admin credentials
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in je browser.
+Open [http://localhost:3000](http://localhost:3000).
+
+### Production (Docker)
+
+```bash
+# Clone and configure
+git clone https://github.com/chaitoe/familie-landveld.git
+cd familie-landveld
+
+# Set admin credentials in .env
+cp .env.example .env
+# Edit .env — change ADMIN_USERNAME, ADMIN_PASSWORD, ADMIN_SECRET!
+
+# Build and start
+docker compose up -d --build
+
+# View logs
+docker compose logs -f
+
+# Stop
+docker compose down
+```
+
+The container runs as a non-root `nextjs` user on port `3000` with a healthcheck at `/en`.
+
+### Docker Compose
+
+```yaml
+# docker-compose.yml
+services:
+  app:
+    build: .
+    container_name: familie-landveld
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3000/en"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+```
+
+### Traefik Reverse Proxy
+
+If you use Traefik on another machine, point it at this server:
+
+```yaml
+# On the Traefik machine
+http:
+  routers:
+    landveld:
+      rule: "Host(`landveld.chai2.net`)"
+      entryPoints: ["websecure"]
+      service: landveld
+      tls:
+        certResolver: letsencrypt
+
+  services:
+    landveld:
+      loadBalancer:
+        servers:
+          - url: "http://<this-server-ip>:3000"
+```
 
 ---
 
@@ -103,6 +163,8 @@ familie-landveld-app/
 | Laag | Technologie |
 |---|---|
 | Framework | Next.js 16 (App Router) |
+| Runtime | Node.js 24 (Alpine) |
+| Container | Docker + Compose |
 | Taal | TypeScript (strict) |
 | Styling | Tailwind CSS 4 |
 | Stamboom | React Flow (@xyflow/react) |
