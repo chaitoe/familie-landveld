@@ -14,15 +14,18 @@
 | Feature | Beschrijving |
 |---|---|
 | 🌳 **Interactieve Stamboom** | React Flow visualisatie met zoom/pan, custom nodes, mini-map |
-| 📊 **Historische Tijdlijn** | 17 gebeurtenissen van 1740 tot 2025, filterbaar per categorie |
-| 🗺️ **Kaartweergave** | Leaflet kaart met Surinaamse plantages, steden en marrongebieden |
-| 📚 **Bronnenbeheer** | 11 gedocumenteerde bronnen (boeken, kranten, archieven) |
+| 📊 **Historische Tijdlijn** | 17 gebeurtenissen van 1650 tot 2025, filterbaar per categorie |
+| 🗺️ **Kaartweergave** | Leaflet kaart met gekleurde markers, migratieroutes, satelliet-toggle, rijke popups |
+| 📍 **Locatiekaartjes** | 7 plaatsen met historische beschrijving, periode en familiebetekenis |
+| 📚 **Bronnenbeheer** | 11 gedocumenteerde bronnen (boeken, kranten, archieven, interviews) |
 | 📖 **Familieverhalen** | Verhalen over de Brooskampers, Plantage Rorac, Ma Amba |
-| 🌙 **Dark Mode** | Light / Dark / Sepia thema's met persistentie |
-| 🌐 **i18n** | Nederlands & Engels, volledig vertaald |
-| 🔐 **Admin Panel** | Beveiligde login, CRUD voor personen (geen JSON editing nodig) |
+| 🎭 **3 Thema's** | Light / Dark / Sepia met localStorage persistentie |
+| 🌐 **i18n** | Nederlands & Engels, ~90 vertaalsleutels |
+| 📱 **Mobile Responsive** | Hamburger menu, adaptieve layouts voor alle schermformaten |
+| 🔐 **Admin Panel** | Beveiligde login, CRUD voor personen met image upload & social links |
 | 📄 **PDF Export** | Persoonsbladen exporteren als PDF |
-| 📸 **Historische Foto** | Publiek domein foto van Kapitein Broos (ca. 1870) |
+| 📸 **Portretfoto's** | Kapitein Broos (ca. 1870), Raymond Landveld, plus avatar-placeholders |
+| 🏠 **Uitgebreide Homepage** | Welkomsttekst, boekaanbeveling, uitgelichte personen, statistieken |
 
 ---
 
@@ -30,7 +33,7 @@
 
 ```bash
 # 1. Clone de repository
-git clone https://github.com/chai2net/familie-landveld.git
+git clone https://github.com/chaitoe/familie-landveld.git
 cd familie-landveld-app
 
 # 2. Installeer dependencies
@@ -70,7 +73,7 @@ familie-landveld-app/
 │   │   ├── page.tsx             # Homepage met hero
 │   │   ├── stamboom/            # 🌳 Interactieve stamboom
 │   │   ├── tijdlijn/            # 📊 Historische tijdlijn
-│   │   ├── kaart/               # 🗺️ Kaart (Leaflet)
+│   │   ├── kaart/               # 🗺️ Kaart (Leaflet: markers, routes, satelliet)
 │   │   ├── bronnen/             # 📚 Bronnenoverzicht
 │   │   ├── verhalen/            # 📖 Familieverhalen
 │   │   └── beheer/              # 🔐 Admin (login + CRUD)
