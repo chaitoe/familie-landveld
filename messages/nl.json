@@ -1,0 +1,90 @@
+{
+  "app": {
+    "title": "Familie Landveld",
+    "subtitle": "Stamboom — Suriname",
+    "description": "Genealogisch onderzoek naar de familie Landveld, afstammelingen van de Brooskampers onder Kapitein Broos (1821–1880)"
+  },
+  "home": {
+    "persons": "Personen",
+    "ancestors": "Voorouders",
+    "living": "In leven",
+    "generations": "Generaties",
+    "treeLink": "Interactieve Stamboom",
+    "treeDesc": "Verken de stamboom — van Ma Amba in Ghana tot de 20e eeuw.",
+    "sourcesLink": "Bronnen & Archieven",
+    "sourcesDesc": "Bekijk alle onderzoeksbronnen: boeken, kranten, archiefstukken.",
+    "storiesLink": "Familieverhalen",
+    "storiesDesc": "Lees over de Brooskampers, Plantage Rorac en de vrijheidsstrijd."
+  },
+  "nav": {
+    "stamboom": "Stamboom",
+    "bronnen": "Bronnen",
+    "verhalen": "Verhalen",
+    "tijdlijn": "Tijdlijn",
+    "kaart": "Kaart",
+    "beheer": "Beheer"
+  },
+  "person": {
+    "born": "Geboren",
+    "died": "Overleden",
+    "birthName": "Geboortenaam",
+    "gender": "Geslacht",
+    "male": "Man",
+    "female": "Vrouw",
+    "other": "Anders",
+    "alive": "In leven",
+    "deceased": "Overleden",
+    "unknown": "Onbekend",
+    "parents": "Ouders",
+    "children": "Kinderen",
+    "spouses": "Partners",
+    "siblings": "Broers/Zussen",
+    "biography": "Biografie",
+    "customFields": "Aanvullende gegevens",
+    "sources": "Bronnen",
+    "events": "Gebeurtenissen",
+    "noParents": "Geen ouders bekend",
+    "noChildren": "Geen kinderen bekend",
+    "noSpouses": "Geen partners bekend"
+  },
+  "source": {
+    "title": "Bronnen",
+    "type": "Type",
+    "url": "URL",
+    "archiveRef": "Archiefreferentie",
+    "notes": "Aantekeningen",
+    "types": {
+      "ARCHIVE": "Archief",
+      "NEWSPAPER": "Krant",
+      "BOOK": "Boek",
+      "INTERVIEW": "Interview",
+      "WEBSITE": "Website",
+      "PHOTO": "Foto",
+      "DNA": "DNA",
+      "OTHER": "Overig"
+    }
+  },
+  "story": {
+    "title": "Verhalen",
+    "readMore": "Lees meer",
+    "relatedPersons": "Gerelateerde personen",
+    "tags": "Tags"
+  },
+  "tree": {
+    "zoomIn": "Inzoomen",
+    "zoomOut": "Uitzoomen",
+    "fitView": "Alles tonen",
+    "generations": "Generaties",
+    "legend": "Legenda"
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "back": "Terug naar stamboom",
+    "noData": "Geen gegevens beschikbaar"
+  },
+  "export": {
+    "pdf": "📄 Exporteer PDF",
+    "generating": "⏳ Genereren..."
+  }
+}

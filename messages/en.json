@@ -1,0 +1,90 @@
+{
+  "app": {
+    "title": "Family Landveld",
+    "subtitle": "Family Tree — Suriname",
+    "description": "Genealogical research into the Landveld family, descendants of the Brooskampers under Captain Broos (1821–1880)"
+  },
+  "home": {
+    "persons": "Persons",
+    "ancestors": "Ancestors",
+    "living": "Living",
+    "generations": "Generations",
+    "treeLink": "Interactive Family Tree",
+    "treeDesc": "Explore the family tree — from Ma Amba in Ghana to the 20th century.",
+    "sourcesLink": "Sources & Archives",
+    "sourcesDesc": "Browse all research sources: books, newspapers, archives.",
+    "storiesLink": "Family Stories",
+    "storiesDesc": "Read about the Brooskampers, Plantation Rorac, and the fight for freedom."
+  },
+  "nav": {
+    "stamboom": "Family Tree",
+    "bronnen": "Sources",
+    "verhalen": "Stories",
+    "tijdlijn": "Timeline",
+    "kaart": "Map",
+    "beheer": "Admin"
+  },
+  "person": {
+    "born": "Born",
+    "died": "Died",
+    "birthName": "Birth name",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "other": "Other",
+    "alive": "Alive",
+    "deceased": "Deceased",
+    "unknown": "Unknown",
+    "parents": "Parents",
+    "children": "Children",
+    "spouses": "Spouses",
+    "siblings": "Siblings",
+    "biography": "Biography",
+    "customFields": "Additional Information",
+    "sources": "Sources",
+    "events": "Events",
+    "noParents": "No parents known",
+    "noChildren": "No children known",
+    "noSpouses": "No spouses known"
+  },
+  "source": {
+    "title": "Sources",
+    "type": "Type",
+    "url": "URL",
+    "archiveRef": "Archive Reference",
+    "notes": "Notes",
+    "types": {
+      "ARCHIVE": "Archive",
+      "NEWSPAPER": "Newspaper",
+      "BOOK": "Book",
+      "INTERVIEW": "Interview",
+      "WEBSITE": "Website",
+      "PHOTO": "Photo",
+      "DNA": "DNA",
+      "OTHER": "Other"
+    }
+  },
+  "story": {
+    "title": "Stories",
+    "readMore": "Read more",
+    "relatedPersons": "Related persons",
+    "tags": "Tags"
+  },
+  "tree": {
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "fitView": "Fit view",
+    "generations": "Generations",
+    "legend": "Legend"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "back": "Back to family tree",
+    "noData": "No data available"
+  },
+  "export": {
+    "pdf": "📄 Export PDF",
+    "generating": "⏳ Generating..."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Landveld",
+  "colors": {
+    "primary": "#166534",
+    "secondary": "#854d0e",
+    "accent": "#b45309",
+    "background": "#faf7f2",
+    "foreground": "#1c1917",
+    "muted": "#e7e5e4",
+    "border": "#d6d3d1",
+    "card": "#ffffff"
+  },
+  "fonts": {
+    "heading": "Georgia, serif",
+    "body": "system-ui, sans-serif"
+  }
+}

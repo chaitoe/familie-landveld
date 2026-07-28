@@ -1,0 +1,12 @@
+{
+  "id": "landveld-lj",
+  "ref": "LANDVELD-1921-005",
+  "firstName": "L.J.",
+  "lastName": "Landveld",
+  "gender": "M",
+  "isAlive": false,
+  "birth": { "year": 1921, "month": 8, "day": 1, "circa": false },
+  "birthPlaceId": "place-suriname",
+  "biography": "**L.J. Landveld** — geregistreerd in Suriname op 1 augustus 1921. Twee vermeldingen in de Open Archieven index.",
+  "customFields": []
+}

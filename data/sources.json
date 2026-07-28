@@ -1,0 +1,101 @@
+[
+  {
+    "id": "src-hoogbergen",
+    "title": "Het kamp van Broos en Kaliko: de geschiedenis van een Afro-Surinaamse familie",
+    "type": "BOOK",
+    "url": null,
+    "archiveRef": null,
+    "notes": "Hoogbergen, W. (1996). Amsterdam: Prometheus. ISBN 9053334483. Heruitgave VACO, ISBN 978-99914-0-085-3. 232 pagina's. Bekroond met de Eureka-prijs 1998.",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-wikipedia-broos",
+    "title": "Wikipedia — Kapitein Broos",
+    "type": "WEBSITE",
+    "url": "https://nl.wikipedia.org/wiki/Kapitein_Broos",
+    "archiveRef": null,
+    "notes": "Wikipedia-artikel over Kapitein Broos (1821–1880), leider van de Brooskampers.",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-wikipedia-raymond",
+    "title": "Wikipedia — Raymond Landveld",
+    "type": "WEBSITE",
+    "url": "https://nl.wikipedia.org/wiki/Raymond_Landveld",
+    "archiveRef": null,
+    "notes": "Wikipedia-artikel over Raymond Harold Landveld, minister TCT van Suriname sinds 2025.",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-plantages-rorac",
+    "title": "Suriname Plantages — Plantage Rorac",
+    "type": "WEBSITE",
+    "url": "https://www.surinameplantages.com/archief/r/rorac",
+    "archiveRef": null,
+    "notes": "Informatie over Plantage Rorac (Friti) aan de Surinamerivier. In 1863 geschonken aan Brooskampers.",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-suriname-nu-broos",
+    "title": "Suriname.nu — Kapitein Broos 1821–1880",
+    "type": "WEBSITE",
+    "url": "https://suriname.nu/surinamezoeken/knowledge-base/kapitein-broos-1821-1880-een-surinaams-onafhankelijkheidsstrijder-hij-was-d/",
+    "archiveRef": null,
+    "notes": "Anda Suriname pagina over Kapitein Broos. Vermeldt dat Broos en Kaliko vanuit Afrika werden gehaald.",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-wiewaswie",
+    "title": "WieWasWie — 77 Landveld documenten",
+    "type": "ARCHIVE",
+    "url": "https://www.wiewaswie.nl/nl/zoeken/?q=Landveld",
+    "archiveRef": "CBG / WieWasWie",
+    "notes": "77 persoonsdocumenten met achternaam Landveld, alle uit Suriname, datum 01-08-1921.",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-openarchieven",
+    "title": "Open Archieven — 308 Landveld vermeldingen",
+    "type": "ARCHIVE",
+    "url": "https://www.openarchieven.nl/search.php?name=landveld",
+    "archiveRef": "Open Archieven / Coret Genealogie",
+    "notes": "308 persoonsvermeldingen met de naam Landveld in Suriname, 1921.",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-delpher",
+    "title": "Delpher — 796 krantenartikelen met Landveld",
+    "type": "NEWSPAPER",
+    "url": "https://www.delpher.nl/nl/kranten/results?query=Landveld&coll=ddd",
+    "archiveRef": "KB Nationale Bibliotheek",
+    "notes": "796 krantenartikelen (1945–1953) waarin Landveld voorkomt. Inclusief artikelen over jaguaraanval (1951), arbeider Paranam (1947), aanrijding (1950).",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-nationaalarchief-slavenregisters",
+    "title": "Nationaal Archief — Surinaamse Slavenregisters (1816–1863)",
+    "type": "ARCHIVE",
+    "url": "https://www.nationaalarchief.nl/onderzoeken/index/nt00461",
+    "archiveRef": "Nationaal Archief Nederland, index NT00461",
+    "notes": "Dataset met 161.790 records. Landveld komt hier niet in voor (Brooskampers waren gevluchte marrons).",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-carlet",
+    "title": "Werkgroep Caraïbische Letteren — Het kamp van Broos en Kaliko herdrukt",
+    "type": "WEBSITE",
+    "url": "https://werkgroepcaraibischeletteren.nl/het-kamp-van-broos-en-kaliko-herdrukt/",
+    "archiveRef": null,
+    "notes": "Artikel over de heruitgave van Hoogbergens boek (VACO). Bevat samenvatting en context.",
+    "attachedMedia": []
+  },
+  {
+    "id": "src-genealogieforum",
+    "title": "SurinaamseGenealogie Forum — Stamboom Landveld, Dompig, Elmont",
+    "type": "WEBSITE",
+    "url": "https://www.tapatalk.com/groups/surinaamsegenealogie/stamboom-landveld-dompig-elmont-t416.html",
+    "archiveRef": null,
+    "notes": "Actieve forumdiscussie over de stamboom Landveld met Dompig en Elmont connecties.",
+    "attachedMedia": []
+  }
+]

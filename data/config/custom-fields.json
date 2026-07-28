@@ -1,0 +1,15 @@
+{
+  "fields": [
+    { "key": "srananName", "label": { "nl": "Sranan naam", "en": "Sranan name" }, "type": "TEXT", "category": "Persoonlijk" },
+    { "key": "slaveName", "label": { "nl": "Slavennaam", "en": "Slave name" }, "type": "TEXT", "category": "Slavernij" },
+    { "key": "maroonName", "label": { "nl": "Marronnaam", "en": "Maroon name" }, "type": "TEXT", "category": "Slavernij" },
+    { "key": "religion", "label": { "nl": "Religie", "en": "Religion" }, "type": "TEXT", "category": "Persoonlijk" },
+    { "key": "ethnicity", "label": { "nl": "Etniciteit", "en": "Ethnicity" }, "type": "TEXT", "category": "Persoonlijk" },
+    { "key": "occupation", "label": { "nl": "Beroep", "en": "Occupation" }, "type": "TEXT", "category": "Werk" },
+    { "key": "plantationRole", "label": { "nl": "Rol op plantage", "en": "Plantation Role" }, "type": "TEXT", "category": "Slavernij" },
+    { "key": "africanOrigin", "label": { "nl": "Afrikaanse herkomst", "en": "African Origin" }, "type": "TEXT", "category": "Slavernij" },
+    { "key": "emancipationRef", "label": { "nl": "Emancipatiereferentie", "en": "Emancipation Reference" }, "type": "TEXT", "category": "Emancipatie" },
+    { "key": "campName", "label": { "nl": "Kampnaam (Brooskampers)", "en": "Camp Name" }, "type": "TEXT", "category": "Slavernij" },
+    { "key": "notes", "label": { "nl": "Aantekeningen", "en": "Notes" }, "type": "MARKDOWN", "category": "Overig" }
+  ]
+}

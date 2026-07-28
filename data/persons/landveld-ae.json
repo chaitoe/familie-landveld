@@ -1,0 +1,12 @@
+{
+  "id": "landveld-ae",
+  "ref": "LANDVELD-1921-003",
+  "firstName": "A.E.",
+  "lastName": "Landveld",
+  "gender": "F",
+  "isAlive": false,
+  "birth": { "year": 1921, "month": 8, "day": 1, "circa": false },
+  "birthPlaceId": "place-suriname",
+  "biography": "**A.E. Landveld** — geregistreerd in Suriname op 1 augustus 1921. Verscheen 4 keer in de Open Archieven index.",
+  "customFields": []
+}

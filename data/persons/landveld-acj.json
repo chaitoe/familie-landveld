@@ -1,0 +1,12 @@
+{
+  "id": "landveld-acj",
+  "ref": "LANDVELD-1921-002",
+  "firstName": "A.C.J.",
+  "lastName": "Landveld",
+  "gender": "M",
+  "isAlive": false,
+  "birth": { "year": 1921, "month": 8, "day": 1, "circa": false },
+  "birthPlaceId": "place-suriname",
+  "biography": "**A.C.J. Landveld** — geregistreerd in Suriname op 1 augustus 1921. Volledige voornamen nog onbekend.",
+  "customFields": []
+}

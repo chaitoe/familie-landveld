@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧬 Familie Landveld — Stamboom Suriname
 
-## Getting Started
+> Een interactieve genealogische webapplicatie voor de familie Landveld, afstammelingen van de **Brooskampers** onder leiding van Kapitein Broos (1821–1880).
 
-First, run the development server:
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Tailwind](https://img.shields.io/badge/Tailwind-4-38bdf8)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+---
+
+## ✨ Features
+
+| Feature | Beschrijving |
+|---|---|
+| 🌳 **Interactieve Stamboom** | React Flow visualisatie met zoom/pan, custom nodes, mini-map |
+| 📊 **Historische Tijdlijn** | 17 gebeurtenissen van 1740 tot 2025, filterbaar per categorie |
+| 🗺️ **Kaartweergave** | Leaflet kaart met Surinaamse plantages, steden en marrongebieden |
+| 📚 **Bronnenbeheer** | 11 gedocumenteerde bronnen (boeken, kranten, archieven) |
+| 📖 **Familieverhalen** | Verhalen over de Brooskampers, Plantage Rorac, Ma Amba |
+| 🌙 **Dark Mode** | Light / Dark / Sepia thema's met persistentie |
+| 🌐 **i18n** | Nederlands & Engels, volledig vertaald |
+| 🔐 **Admin Panel** | Beveiligde login, CRUD voor personen (geen JSON editing nodig) |
+| 📄 **PDF Export** | Persoonsbladen exporteren als PDF |
+| 📸 **Historische Foto** | Publiek domein foto van Kapitein Broos (ca. 1870) |
+
+---
+
+## 🚀 Quick Start
 
 ```bash
+# 1. Clone de repository
+git clone https://github.com/chai2net/familie-landveld.git
+cd familie-landveld-app
+
+# 2. Installeer dependencies
+npm install
+
+# 3. Maak .env.local aan (kopieer van .env.example)
+cp .env.example .env.local
+# Bewerk .env.local met eigen admin credentials
+
+# 4. Start de dev server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in je browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔐 Admin Login
 
-## Learn More
+Ga naar `/nl/beheer` → klik **Inloggen**.
 
-To learn more about Next.js, take a look at the following resources:
+| Veld | Default (.env.example) |
+|---|---|
+| Gebruikersnaam | `admin` |
+| Wachtwoord | `changeme` |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> ⚠️ **Wijzig deze voor productie!** Zie `.env.local`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📂 Projectstructuur
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+familie-landveld-app/
+├── app/
+│   ├── [locale]/               # i18n routing (nl/en)
+│   │   ├── page.tsx             # Homepage met hero
+│   │   ├── stamboom/            # 🌳 Interactieve stamboom
+│   │   ├── tijdlijn/            # 📊 Historische tijdlijn
+│   │   ├── kaart/               # 🗺️ Kaart (Leaflet)
+│   │   ├── bronnen/             # 📚 Bronnenoverzicht
+│   │   ├── verhalen/            # 📖 Familieverhalen
+│   │   └── beheer/              # 🔐 Admin (login + CRUD)
+│   └── api/                     # REST API (auth, persons, sources, places)
+├── components/                  # React componenten
+│   ├── tree/                    # React Flow stamboom
+│   ├── person/                  # PersonCard, PersonDetail
+│   ├── timeline/                # Tijdlijn component
+│   ├── map/                     # Leaflet kaart
+│   ├── admin/                   # PersonEditor, LogoutButton
+│   └── layout/                  # MainNav, ThemeToggle
+├── lib/                         # Data layer, types, tree algoritme
+├── data/                        # JSON databestanden
+│   ├── persons/                 # 14 personen (één per JSON)
+│   ├── relations.json           # 15 familierelaties
+│   ├── sources.json             # 11 bronnen
+│   ├── places.json              # 7 plaatsen
+│   └── config/                  # Uitbreidbare configuratie
+├── messages/                    # i18n vertalingen (nl.json, en.json)
+└── public/media/                # Afbeeldingen
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🛠️ Tech Stack
+
+| Laag | Technologie |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Taal | TypeScript (strict) |
+| Styling | Tailwind CSS 4 |
+| Stamboom | React Flow (@xyflow/react) |
+| Kaart | Leaflet + React-Leaflet |
+| PDF | jsPDF |
+| i18n | next-intl |
+| State | Zustand |
+| Auth | Cookie-based sessie |
+
+---
+
+## 📖 Historische Context
+
+De familie **Landveld** stamt af van de **Brooskampers** (Bakabusi Sama), een Marron-gemeenschap die onder leiding van **Kapitein Broos** (1821–1880) in vrijheid leefde in het ontoegankelijke moerasgebied Kaaimangrasi in Suriname.
+
+Na de afschaffing van de slavernij op **1 juli 1863** vestigden de Brooskampers zich op **Plantage Rorac** aan de Surinamerivier. De grootste families namen de achternamen **Babel** en **Landveld** aan.
+
+> 📖 **Aanbevolen literatuur**: Wim Hoogbergen, *Het kamp van Broos en Kaliko* (1996, heruitgave VACO).
+
+---
+
+## 📄 Licentie
+
+MIT — © 2026 [Chai2Net](https://chai2.net)

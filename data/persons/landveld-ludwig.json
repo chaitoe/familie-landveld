@@ -1,0 +1,12 @@
+{
+  "id": "landveld-ludwig",
+  "ref": "LANDVELD-MOD-003",
+  "firstName": "Ludwig",
+  "lastName": "Landveld",
+  "gender": "M",
+  "isAlive": false,
+  "birth": { "year": 1925, "circa": true },
+  "birthPlaceId": "place-suriname",
+  "biography": "**Ludwig Landveld** was de grootvader van een forumgebruiker op het SurinaamseGenealogie forum. Zijn kleinkind woont in Nederland en zoekt contact met andere Landveld-familieleden.",
+  "customFields": []
+}

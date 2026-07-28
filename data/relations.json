@@ -1,0 +1,17 @@
+[
+  { "id": "rel-001", "type": "PARENT_CHILD", "person1Id": "landveld-ma-amba", "person2Id": "landveld-ma-uwa", "sources": [{ "sourceId": "src-hoogbergen" }] },
+  { "id": "rel-002", "type": "PARENT_CHILD", "person1Id": "landveld-ma-uwa", "person2Id": "landveld-broos", "sources": [{ "sourceId": "src-hoogbergen" }] },
+  { "id": "rel-003", "type": "PARENT_CHILD", "person1Id": "landveld-ma-uwa", "person2Id": "landveld-kaliko", "sources": [{ "sourceId": "src-hoogbergen" }] },
+  { "id": "rel-004", "type": "PARENT_CHILD", "person1Id": "landveld-ma-uwa", "person2Id": "landveld-mandrijntje", "sources": [{ "sourceId": "src-hoogbergen" }] },
+  { "id": "rel-005", "type": "SIBLING", "person1Id": "landveld-broos", "person2Id": "landveld-kaliko", "sources": [{ "sourceId": "src-hoogbergen" }] },
+  { "id": "rel-006", "type": "SIBLING", "person1Id": "landveld-broos", "person2Id": "landveld-mandrijntje", "sources": [{ "sourceId": "src-hoogbergen" }] },
+  { "id": "rel-007", "type": "PARENT_CHILD", "person1Id": "landveld-broos", "person2Id": "landveld-gen1863", "label": "Nazaat → Landveld", "sources": [{ "sourceId": "src-hoogbergen" }] },
+  { "id": "rel-008", "type": "PARENT_CHILD", "person1Id": "landveld-gen1863", "person2Id": "landveld-ac", "label": "Mogelijk nazaat", "sources": [{ "sourceId": "src-wiewaswie" }] },
+  { "id": "rel-009", "type": "PARENT_CHILD", "person1Id": "landveld-gen1863", "person2Id": "landveld-acj", "label": "Mogelijk nazaat", "sources": [{ "sourceId": "src-wiewaswie" }] },
+  { "id": "rel-010", "type": "PARENT_CHILD", "person1Id": "landveld-gen1863", "person2Id": "landveld-ae", "label": "Mogelijk nazaat", "sources": [{ "sourceId": "src-openarchieven" }] },
+  { "id": "rel-011", "type": "PARENT_CHILD", "person1Id": "landveld-gen1863", "person2Id": "landveld-aj", "label": "Mogelijk nazaat", "sources": [{ "sourceId": "src-openarchieven" }] },
+  { "id": "rel-012", "type": "PARENT_CHILD", "person1Id": "landveld-gen1863", "person2Id": "landveld-lj", "label": "Mogelijk nazaat", "sources": [{ "sourceId": "src-openarchieven" }] },
+  { "id": "rel-013", "type": "PARENT_CHILD", "person1Id": "landveld-gen1863", "person2Id": "landveld-ludwig", "label": "Mogelijk nazaat", "sources": [{ "sourceId": "src-genealogieforum" }] },
+  { "id": "rel-014", "type": "PARENT_CHILD", "person1Id": "landveld-gen1863", "person2Id": "landveld-frits", "label": "Mogelijk nazaat", "sources": [{ "sourceId": "src-genealogieforum" }] },
+  { "id": "rel-015", "type": "PARENT_CHILD", "person1Id": "landveld-gen1863", "person2Id": "landveld-raymond", "label": "Mogelijk nazaat", "sources": [{ "sourceId": "src-wikipedia-raymond" }] }
+]

@@ -1,0 +1,12 @@
+{
+  "id": "landveld-frits",
+  "ref": "LANDVELD-MOD-002",
+  "firstName": "Frits",
+  "lastName": "Landveld",
+  "gender": "M",
+  "isAlive": true,
+  "birth": { "year": 1960, "circa": true },
+  "birthPlaceId": "place-suriname",
+  "biography": "**Frits Landveld** (ca. 65 jaar) wordt genoemd op het SurinaamseGenealogie forum. Een forumgebruiker uit Suriname zoekt meer achtergrondinformatie over hem.",
+  "customFields": []
+}

@@ -1,0 +1,14 @@
+{
+  "id": "landveld-gen1863",
+  "ref": "LANDVELD-GEN-1863",
+  "firstName": "Eerste Generatie",
+  "lastName": "Landveld (Rorac)",
+  "gender": "X",
+  "isAlive": false,
+  "birth": { "year": 1863, "circa": true, "after": true },
+  "birthPlaceId": "place-rorac",
+  "biography": "**Eerste Generatie Landveld** — Dit vertegenwoordigt de Brooskampers die zich in **1863** op Plantage Rorac vestigden en bij de Burgerlijke Stand de achternaam **Landveld** aannamen.\n\nZij zijn de nazaten van Kapitein Broos en Kaliko. De exacte stamboom tussen 1863 en de volkstelling van 1921 moet nog worden uitgezocht via het boek van Wim Hoogbergen en de Surinaamse archieven.\n\n> ⚠️ Dit is een tijdelijke placeholder voor de ontbrekende generaties.",
+  "customFields": [
+    { "key": "notes", "value": "**Onderzoeksgat**: De precieze familierelaties tussen de Brooskampers (1863) en de Landveld-registraties van 1921 zijn nog niet gedocumenteerd. Raadpleeg Hoogbergen (1996) en het Nationaal Archief Suriname.", "type": "MARKDOWN", "category": "Overig" }
+  ]
+}

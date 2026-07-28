@@ -1,0 +1,15 @@
+{
+  "id": "landveld-ma-amba",
+  "ref": "LANDVELD-ANC-001",
+  "firstName": "Ma Amba",
+  "lastName": "",
+  "gender": "F",
+  "isAlive": false,
+  "birth": { "year": 1780, "circa": true, "after": false, "before": false },
+  "birthPlaceId": "place-ghana",
+  "biography": "**Ma Amba** is de stamgrootmoeder van de Brooskampers. Zij werd geboren in **Ghana (Afrika)** en werd als tot slaaf gemaakte naar Suriname gebracht. Haar dochter Ma Uwa was de moeder van Kapitein Broos. Ma Amba overleed vóór de emancipatie van 1863.\n\nZij is de oudst bekende voorouder van de families Babel, Landveld, Meiland en Deekman.",
+  "customFields": [
+    { "key": "africanOrigin", "value": "Ghana", "type": "TEXT", "category": "Slavernij" },
+    { "key": "srananName", "value": "Ma Amba", "type": "TEXT", "category": "Persoonlijk" }
+  ]
+}

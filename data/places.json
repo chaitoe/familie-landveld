@@ -1,0 +1,58 @@
+[
+  {
+    "id": "place-ghana",
+    "name": "Ghana",
+    "type": "COUNTRY",
+    "coordinates": { "lat": 7.9465, "lng": -1.0232 },
+    "historicalNames": ["Goudkust", "Gold Coast"],
+    "country": "Ghana"
+  },
+  {
+    "id": "place-suriname",
+    "name": "Suriname",
+    "type": "COUNTRY",
+    "coordinates": { "lat": 3.9193, "lng": -56.0278 },
+    "historicalNames": ["Nederlands-Guyana", "Suriname"],
+    "country": "Suriname"
+  },
+  {
+    "id": "place-paramaribo",
+    "name": "Paramaribo",
+    "type": "CITY",
+    "coordinates": { "lat": 5.8520, "lng": -55.2038 },
+    "historicalNames": ["Paramaribo"],
+    "country": "Suriname"
+  },
+  {
+    "id": "place-rorac",
+    "name": "Plantage Rorac",
+    "type": "PLANTATION",
+    "coordinates": { "lat": 5.55, "lng": -55.05 },
+    "historicalNames": ["Roorak", "Ro-Rack", "Rac-à-Rac", "Friti"],
+    "country": "Suriname"
+  },
+  {
+    "id": "place-kaaimangrasi",
+    "name": "Kaaimangrasi",
+    "type": "REGION",
+    "coordinates": { "lat": 5.6, "lng": -54.9 },
+    "historicalNames": ["Kaaimangrasi", "Surnaukreek"],
+    "country": "Suriname"
+  },
+  {
+    "id": "place-paranam",
+    "name": "Paranam",
+    "type": "VILLAGE",
+    "coordinates": { "lat": 5.6, "lng": -55.1 },
+    "historicalNames": ["Paranam"],
+    "country": "Suriname"
+  },
+  {
+    "id": "place-surnaukreek",
+    "name": "Surnaukreek",
+    "type": "REGION",
+    "coordinates": { "lat": 5.5, "lng": -54.8 },
+    "historicalNames": ["Surnaukreek"],
+    "country": "Suriname"
+  }
+]

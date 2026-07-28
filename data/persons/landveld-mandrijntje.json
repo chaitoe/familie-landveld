@@ -1,0 +1,14 @@
+{
+  "id": "landveld-mandrijntje",
+  "ref": "LANDVELD-ANC-005",
+  "firstName": "Mandrijntje",
+  "lastName": "",
+  "gender": "F",
+  "isAlive": false,
+  "birth": { "year": 1838, "circa": true, "after": false, "before": false },
+  "birthPlaceId": "place-suriname",
+  "biography": "**Mandrijntje** was de zus van Kapitein Broos en Kaliko. Zij leefde met haar familie in het marronkamp en verhuisde na de emancipatie van 1863 mee naar Plantage Rorac.",
+  "customFields": [
+    { "key": "srananName", "value": "Mandrijntje", "type": "TEXT", "category": "Persoonlijk" }
+  ]
+}

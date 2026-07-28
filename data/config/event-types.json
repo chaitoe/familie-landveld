@@ -1,0 +1,19 @@
+{
+  "eventTypes": [
+    { "key": "BIRTH", "label": { "nl": "Geboorte", "en": "Birth" }, "icon": "🎂", "color": "#22c55e", "category": "LEVEN" },
+    { "key": "BAPTISM", "label": { "nl": "Doop", "en": "Baptism" }, "icon": "💧", "color": "#3b82f6", "category": "LEVEN" },
+    { "key": "DEATH", "label": { "nl": "Overlijden", "en": "Death" }, "icon": "✝️", "color": "#6b7280", "category": "LEVEN" },
+    { "key": "BURIAL", "label": { "nl": "Begrafenis", "en": "Burial" }, "icon": "🪦", "color": "#4b5563", "category": "LEVEN" },
+    { "key": "MARRIAGE", "label": { "nl": "Huwelijk", "en": "Marriage" }, "icon": "💒", "color": "#ec4899", "category": "FAMILIE" },
+    { "key": "DIVORCE", "label": { "nl": "Scheiding", "en": "Divorce" }, "icon": "💔", "color": "#ef4444", "category": "FAMILIE" },
+    { "key": "RESIDENCE", "label": { "nl": "Woonplaats", "en": "Residence" }, "icon": "🏠", "color": "#a855f7", "category": "LEVEN" },
+    { "key": "OCCUPATION", "label": { "nl": "Beroep", "en": "Occupation" }, "icon": "🔨", "color": "#f59e0b", "category": "WERK" },
+    { "key": "EMANCIPATION", "label": { "nl": "Emancipatie", "en": "Emancipation" }, "icon": "🕊️", "color": "#f97316", "category": "EMANCIPATIE" },
+    { "key": "REGISTRATION", "label": { "nl": "Registratie Burgerlijke Stand", "en": "Civil Registry" }, "icon": "📋", "color": "#14b8a6", "category": "EMANCIPATIE" },
+    { "key": "MAROON_FLIGHT", "label": { "nl": "Marronvlucht", "en": "Maroon Flight" }, "icon": "🏃", "color": "#8b5cf6", "category": "SLAVERNIJ" },
+    { "key": "BATTLE", "label": { "nl": "Gevecht", "en": "Battle" }, "icon": "⚔️", "color": "#dc2626", "category": "SLAVERNIJ" },
+    { "key": "PEACE_TREATY", "label": { "nl": "Vredesverdrag", "en": "Peace Treaty" }, "icon": "🤝", "color": "#0891b2", "category": "EMANCIPATIE" },
+    { "key": "NEWSPAPER", "label": { "nl": "Krantenartikel", "en": "Newspaper Article" }, "icon": "📰", "color": "#71717a", "category": "OVERIG" },
+    { "key": "CUSTOM", "label": { "nl": "Aangepast", "en": "Custom" }, "icon": "📌", "color": "#a1a1aa", "category": "OVERIG" }
+  ]
+}

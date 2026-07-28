@@ -1,0 +1,15 @@
+{
+  "id": "landveld-ma-uwa",
+  "ref": "LANDVELD-ANC-002",
+  "firstName": "Ma Uwa",
+  "lastName": "",
+  "gender": "F",
+  "isAlive": false,
+  "birth": { "year": 1805, "circa": true, "after": false, "before": false },
+  "birthPlaceId": "place-suriname",
+  "biography": "**Ma Uwa** was de moeder van Kapitein Broos, Kaliko en Mandrijntje. Zij was de dochter van Ma Amba, die in Ghana geboren was. Ma Uwa leefde met haar kinderen in het marronkamp aan de Surnaukreek.",
+  "customFields": [
+    { "key": "srananName", "value": "Ma Uwa", "type": "TEXT", "category": "Persoonlijk" },
+    { "key": "campName", "value": "Bakabusi Nengre (Brooskampers)", "type": "TEXT", "category": "Slavernij" }
+  ]
+}

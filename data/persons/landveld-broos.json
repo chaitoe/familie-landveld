@@ -1,0 +1,19 @@
+{
+  "id": "landveld-broos",
+  "ref": "LANDVELD-ANC-003",
+  "firstName": "Broos",
+  "lastName": "",
+  "gender": "M",
+  "isAlive": false,
+  "birth": { "year": 1821, "circa": false, "after": false, "before": false },
+  "death": { "year": 1880, "circa": false, "after": false, "before": false },
+  "birthPlaceId": "place-suriname",
+  "deathPlaceId": "place-rorac",
+  "portraitMediaId": "media-kapitein-broos",
+  "biography": "**Kapitein Broos** (1821–1880) was een 19e-eeuwse Surinaamse vrijheidsstrijder en leider van de **Brooskampers** (Bakabusi Sama). Hij leidde het marronkamp in het ontoegankelijke moerasgebied Kaaimangrasi.\n\nIn 1862 sloot Broos een vredesovereenkomst met Gouverneur-Generaal Van Lansberge. Hij ontving zijn kapiteinstitel en **Plantage Rorac** werd officieel aan hem toegewezen. Na de emancipatie van 1 juli 1863 vestigden de Brooskampers zich definitief op Rorac.\n\nBroos is de **enige Surinaamse vrijheidsstrijder** van wie een foto bewaard is gebleven (ca. 1870, door S. del Castilho). De foto hangt in een museum in Ghana.\n\nUit het kamp van Broos zijn de families **Babel**, **Landveld**, **Meiland** en **Deekman** voortgekomen.",
+  "customFields": [
+    { "key": "srananName", "value": "Kabiten Broos", "type": "TEXT", "category": "Persoonlijk" },
+    { "key": "campName", "value": "Bakabusi Nengre (Brooskampers)", "type": "TEXT", "category": "Slavernij" },
+    { "key": "occupation", "value": "Kapitein, Vrijheidsstrijder, Marronleider", "type": "TEXT", "category": "Werk" }
+  ]
+}

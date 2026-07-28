@@ -1,0 +1,15 @@
+{
+  "id": "landveld-kaliko",
+  "ref": "LANDVELD-ANC-004",
+  "firstName": "Kaliko",
+  "lastName": "",
+  "gender": "M",
+  "isAlive": false,
+  "birth": { "year": 1835, "circa": false, "after": false, "before": false },
+  "birthPlaceId": "place-suriname",
+  "biography": "**Kaliko** (geboren 1835) was de jongere broer van Kapitein Broos en mede-leider van de Brooskampers. Samen met Broos leidde hij het marronkamp aan de Surnaukreek.\n\nNa de emancipatie van 1863 vestigde Kaliko zich met de andere Brooskampers op Plantage Rorac. Zijn nakomelingen behoren tot de families Babel, Landveld, Meiland en Deekman.\n\n> ⚠️ Let op: Volgens sommige bronnen (Suriname.nu) werden Broos en Kaliko vanuit Afrika naar Suriname gehaald. Wikipedia stelt dat Broos in 1821 in Suriname geboren werd. Het boek van Wim Hoogbergen is de primaire bron.",
+  "customFields": [
+    { "key": "srananName", "value": "Kaliko", "type": "TEXT", "category": "Persoonlijk" },
+    { "key": "campName", "value": "Bakabusi Nengre (Brooskampers)", "type": "TEXT", "category": "Slavernij" }
+  ]
+}
