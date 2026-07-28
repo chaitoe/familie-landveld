@@ -37,6 +37,14 @@ export interface Place {
   coordinates?: { lat: number; lng: number };
   historicalNames: string[];
   country: string;
+  /** Historische beschrijving van de locatie */
+  description?: string;
+  /** Betekenis voor de familie Landveld */
+  significance?: string;
+  /** Historische periode (bijv. "1700-1863") */
+  period?: string;
+  /** Gerelateerde personen (IDs) */
+  relatedPersonIds?: string[];
 }
 
 // ── Bronverwijzing ─────────────────────────────────────────

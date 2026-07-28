@@ -5,7 +5,11 @@
     "type": "COUNTRY",
     "coordinates": { "lat": 7.9465, "lng": -1.0232 },
     "historicalNames": ["Goudkust", "Gold Coast"],
-    "country": "Ghana"
+    "country": "Ghana",
+    "description": "Vanuit de Goudkust (het huidige Ghana) werden tussen 1650 en 1800 tienduizenden Afrikanen naar Suriname verscheept als onderdeel van de trans-Atlantische slavenhandel. De voorouders van de Brooskampers — waaronder vermoedelijk Ma Amba — kwamen oorspronkelijk uit deze regio.",
+    "significance": "Herkomstgebied van de voorouders. Ma Amba en andere stamouders werden waarschijnlijk vanuit de Goudkust naar Suriname gebracht.",
+    "period": "1650–1800",
+    "relatedPersonIds": ["landveld-ma-amba"]
   },
   {
     "id": "place-suriname",
@@ -13,7 +17,11 @@
     "type": "COUNTRY",
     "coordinates": { "lat": 3.9193, "lng": -56.0278 },
     "historicalNames": ["Nederlands-Guyana", "Suriname"],
-    "country": "Suriname"
+    "country": "Suriname",
+    "description": "Suriname was van 1667 tot 1975 een Nederlandse kolonie. De economie draaide op plantage-landbouw (suiker, koffie, katoen) met slaafgemaakte Afrikanen. Na de afschaffing van de slavernij in 1863 vestigden de Brooskampers zich als vrije marrons in het binnenland.",
+    "significance": "Thuisland van de familie Landveld. De Brooskampers ontsnapten van de plantages en bouwden een vrije marron-gemeenschap op.",
+    "period": "1667–heden",
+    "relatedPersonIds": ["landveld-ma-amba", "landveld-broos"]
   },
   {
     "id": "place-paramaribo",
@@ -21,7 +29,11 @@
     "type": "CITY",
     "coordinates": { "lat": 5.8520, "lng": -55.2038 },
     "historicalNames": ["Paramaribo"],
-    "country": "Suriname"
+    "country": "Suriname",
+    "description": "Hoofdstad van Suriname, gesticht in 1613. Hier bevonden zich de koloniale overheidskantoren, het slavenregister en de archieven. Veel nazaten van de Brooskampers verhuisden in de 20e eeuw naar Paramaribo voor werk en onderwijs.",
+    "significance": "Bestuurlijk centrum. Moderne Landveld-nazaten wonen en werken hier. Archieven met slavenregisters en emancipatiedocumenten.",
+    "period": "1613–heden",
+    "relatedPersonIds": ["landveld-raymond"]
   },
   {
     "id": "place-rorac",
@@ -29,7 +41,11 @@
     "type": "PLANTATION",
     "coordinates": { "lat": 5.55, "lng": -55.05 },
     "historicalNames": ["Roorak", "Ro-Rack", "Rac-à-Rac", "Friti"],
-    "country": "Suriname"
+    "country": "Suriname",
+    "description": "Plantage Rorac was een suikerrietplantage aan de Surinamerivier. Kapitein Broos leidde hier een groep van 200+ slaafgemaakten. De naam 'Brooskampers' is afgeleid van Broos, die de leider van deze marron-gemeenschap was. Na 1863 trokken de Brooskampers weg van de plantage.",
+    "significance": "Kernlocatie van de familiegeschiedenis. Hier werkte Kapitein Broos en ontstond de naam 'Brooskampers'. Vanaf hier vertrokken ze na de emancipatie.",
+    "period": "~1800–1863",
+    "relatedPersonIds": ["landveld-broos", "landveld-gen-1863"]
   },
   {
     "id": "place-kaaimangrasi",
@@ -37,7 +53,11 @@
     "type": "REGION",
     "coordinates": { "lat": 5.6, "lng": -54.9 },
     "historicalNames": ["Kaaimangrasi", "Surnaukreek"],
-    "country": "Suriname"
+    "country": "Suriname",
+    "description": "Kaaimangrasi (ook wel Surnaukreek) is een marrongebied in het district Para. Na de emancipatie in 1863 trokken de Brooskampers naar deze regio, waar ze een vrije gemeenschap stichtten langs de kreken en rivieren. Ze leefden van landbouw, visserij en houtsnijwerk.",
+    "significance": "Vestigingsgebied van de Brooskampers ná 1863. Hier bouwden ze hun vrije marrondorp op, weg van de plantages.",
+    "period": "1863–heden",
+    "relatedPersonIds": ["landveld-broos", "landveld-gen-1863"]
   },
   {
     "id": "place-paranam",
@@ -45,7 +65,11 @@
     "type": "VILLAGE",
     "coordinates": { "lat": 5.6, "lng": -55.1 },
     "historicalNames": ["Paranam"],
-    "country": "Suriname"
+    "country": "Suriname",
+    "description": "Paranam is een plaats in het district Para, bekend van de bauxietindustrie. In de 20e eeuw trokken veel nazaten van marrongemeenschappen hierheen voor werk in de mijnbouw. Ook Landveld-familieleden vonden hier werk.",
+    "significance": "Werkgelegenheid voor Landveld-nazaten in de 20e eeuw (bauxietmijnbouw).",
+    "period": "1940–heden",
+    "relatedPersonIds": ["landveld-raymond"]
   },
   {
     "id": "place-surnaukreek",
@@ -53,6 +77,10 @@
     "type": "REGION",
     "coordinates": { "lat": 5.5, "lng": -54.8 },
     "historicalNames": ["Surnaukreek"],
-    "country": "Suriname"
+    "country": "Suriname",
+    "description": "De Surnaukreek is een waterloop in het district Para en onderdeel van het woongebied van de Brooskampers. De kreek was essentieel voor transport, visserij en watervoorziening. De marrons bouwden hun dorpen traditioneel langs kreken.",
+    "significance": "Levensader van de Brooskamper-gemeenschap. Langs deze kreek vestigden de families zich na 1863.",
+    "period": "1863–heden",
+    "relatedPersonIds": ["landveld-broos", "landveld-gen-1863"]
   }
 ]
