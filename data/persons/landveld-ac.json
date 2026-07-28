@@ -5,10 +5,21 @@
   "lastName": "Landveld",
   "gender": "M",
   "isAlive": false,
-  "birth": { "year": 1921, "month": 8, "day": 1, "circa": false, "after": false, "before": false },
+  "birth": {
+    "year": 1921,
+    "circa": false
+  },
   "birthPlaceId": "place-suriname",
   "biography": "**A.C. Landveld** werd geregistreerd in de Burgerlijke Stand van Suriname op 1 augustus 1921. Dit betreft een volkstelling of registratiegolf waarin 77 Landveld-personen werden opgenomen.\n\nNader onderzoek via WieWasWie (premium) kan de volledige voornamen achter de initialen onthullen.",
   "customFields": [
-    { "key": "notes", "value": "Geregistreerd op 01-08-1921 in Suriname. Bron: Open Archieven / WieWasWie.", "type": "MARKDOWN", "category": "Overig" }
-  ]
+    {
+      "key": "notes",
+      "value": "Geregistreerd op 01-08-1921 in Suriname. Bron: Open Archieven / WieWasWie.",
+      "type": "TEXT"
+    }
+  ],
+  "death": null,
+  "deathPlaceId": null,
+  "portraitUrl": "/media/portrait-1785245789042.jpg",
+  "socialLinks": []
 }

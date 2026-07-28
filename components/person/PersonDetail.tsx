@@ -24,16 +24,26 @@ export function PersonDetail({ person }: PersonDetailProps) {
     <div className="space-y-6">
       {/* Header */}
       <div className="flex flex-col sm:flex-row gap-6">
-        {/* Portrait (if available) */}
-        {(person.portraitMediaId || person.portraitUrl) && (
-          <div className="flex-shrink-0">
+        {/* Portrait */}
+        <div className="flex-shrink-0">
+          {person.portraitMediaId || person.portraitUrl ? (
             <img
               src={person.portraitUrl || (person.portraitMediaId === 'media-kapitein-broos' ? '/media/kapitein-broos-1870.png' : `/media/${person.portraitMediaId}`)}
               alt={`${person.firstName} ${person.lastName}`}
               className="w-28 h-40 sm:w-36 sm:h-48 object-cover rounded-lg border-2 border-stone-200 dark:border-stone-600 shadow-md"
             />
-          </div>
-        )}
+          ) : (
+            <div className={`w-28 h-40 sm:w-36 sm:h-48 rounded-lg border-2 border-dashed border-stone-300 dark:border-stone-600 flex items-center justify-center ${
+              person.gender === 'M' ? 'bg-blue-50 dark:bg-blue-900/20' :
+              person.gender === 'F' ? 'bg-pink-50 dark:bg-pink-900/20' :
+              'bg-purple-50 dark:bg-purple-900/20'
+            }`}>
+              <span className="font-serif text-4xl sm:text-5xl font-bold text-stone-400 dark:text-stone-500 select-none">
+                {person.firstName.charAt(0)}{person.lastName.charAt(0)}
+              </span>
+            </div>
+          )}
+        </div>
         <div>
           <h1 className="font-serif text-3xl font-bold text-stone-900 dark:text-stone-100">
             {person.firstName} {person.lastName}

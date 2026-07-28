@@ -24,11 +24,21 @@ export function PersonCard({ person }: PersonCardProps) {
       className="block group"
     >
       <div className="bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-lg p-4 shadow-sm hover:shadow-md hover:border-emerald-300 dark:hover:border-emerald-600 transition-all duration-200">
-        <div className="flex items-start justify-between mb-2">
-          <div>
-            <h3 className="font-serif text-lg font-semibold text-stone-800 dark:text-stone-100 group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition-colors">
-              {person.firstName} {person.lastName}
-            </h3>
+        <div className="flex items-start gap-3">
+          {/* Avatar placeholder */}
+          <div className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold text-white ${
+            person.gender === 'M' ? 'bg-blue-400 dark:bg-blue-600' :
+            person.gender === 'F' ? 'bg-pink-400 dark:bg-pink-600' :
+            'bg-purple-400 dark:bg-purple-600'
+          }`}>
+            {person.firstName.charAt(0)}{person.lastName.charAt(0)}
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex items-start justify-between mb-1">
+              <div>
+                <h3 className="font-serif text-base font-semibold text-stone-800 dark:text-stone-100 group-hover:text-emerald-800 dark:group-hover:text-emerald-400 transition-colors truncate">
+                  {person.firstName} {person.lastName}
+                </h3>
             {person.birthName && person.birthName !== person.lastName && (
               <p className="text-xs text-stone-500 dark:text-stone-400">{t('birthName')}: {person.birthName}</p>
             )}
@@ -57,6 +67,8 @@ export function PersonCard({ person }: PersonCardProps) {
             </span>
           </div>
         )}
+          </div>
+        </div>
       </div>
     </Link>
   );
