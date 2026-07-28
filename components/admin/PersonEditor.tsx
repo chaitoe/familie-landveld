@@ -25,9 +25,13 @@ export function PersonEditor({ person, onSaved }: PersonEditorProps) {
     deathYear: person?.death?.year?.toString() || '',
     birthPlaceId: person?.birthPlaceId || '',
     deathPlaceId: person?.deathPlaceId || '',
+    portraitUrl: person?.portraitUrl || person?.portraitMediaId || '',
     biography: person?.biography || '',
     customFields: person?.customFields?.map(f => ({ key: f.key, value: String(f.value) })) || [],
+    socialLinks: person?.socialLinks?.map(s => ({ platform: s.platform, url: s.url, label: s.label || '' })) || [] as { platform: string; url: string; label: string }[],
   });
+
+  const [uploading, setUploading] = useState(false);
 
   const [saving, setSaving] = useState(false);
   const [message, setMessage] = useState('');
@@ -48,6 +52,8 @@ export function PersonEditor({ person, onSaved }: PersonEditorProps) {
       birthPlaceId: form.birthPlaceId || null,
       deathPlaceId: form.deathPlaceId || null,
       biography: form.biography,
+      portraitUrl: form.portraitUrl || null,
+      socialLinks: form.socialLinks.filter(s => s.url).map(s => ({ platform: s.platform, url: s.url, label: s.label || undefined })),
       customFields: form.customFields.filter(f => f.key).map(f => ({ key: f.key, value: f.value, type: 'TEXT' as const })),
     };
 
@@ -123,6 +129,75 @@ export function PersonEditor({ person, onSaved }: PersonEditorProps) {
           rows={8}
           className="w-full px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-lg bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 font-mono text-sm focus:ring-2 focus:ring-emerald-500 outline-none"
           placeholder="Schrijf de biografie in Markdown..." />
+      </div>
+
+      {/* Portrait Image */}
+      <div>
+        <label className="block text-sm font-medium text-stone-700 dark:text-stone-300 mb-1">📸 Portretfoto</label>
+        <div className="flex items-center gap-3">
+          <input type="text" value={form.portraitUrl} onChange={e => setForm(f => ({ ...f, portraitUrl: e.target.value }))}
+            placeholder="URL van foto (of upload hiernaast)"
+            className="flex-1 px-3 py-2 border border-stone-300 dark:border-stone-600 rounded-lg bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 text-sm" />
+          <label className="px-3 py-2 bg-stone-100 dark:bg-stone-700 rounded-lg text-sm cursor-pointer hover:bg-stone-200 dark:hover:bg-stone-600 border border-stone-300 dark:border-stone-600 whitespace-nowrap">
+            📤 Upload
+            <input type="file" accept="image/*" className="hidden" onChange={async (e) => {
+              const file = e.target.files?.[0];
+              if (!file) return;
+              setUploading(true);
+              const fd = new FormData();
+              fd.append('file', file);
+              const res = await fetch('/api/upload', { method: 'POST', body: fd });
+              const data = await res.json();
+              if (data.url) setForm(f => ({ ...f, portraitUrl: data.url }));
+              setUploading(false);
+            }} />
+          </label>
+        </div>
+        {uploading && <p className="text-xs text-stone-500 mt-1">Uploaden...</p>}
+        {form.portraitUrl && (
+          <img src={form.portraitUrl} alt="Preview" className="mt-2 w-24 h-32 object-cover rounded-lg border" />
+        )}
+      </div>
+
+      {/* Social Links */}
+      <div>
+        <div className="flex items-center justify-between mb-2">
+          <label className="text-sm font-medium text-stone-700 dark:text-stone-300">🌐 Social Media & Links</label>
+          <button type="button" onClick={() => setForm(f => ({ ...f, socialLinks: [...f.socialLinks, { platform: 'website', url: '', label: '' }] }))}
+            className="text-xs px-2 py-1 bg-stone-100 dark:bg-stone-700 rounded hover:bg-stone-200 dark:hover:bg-stone-600">
+            + Link toevoegen
+          </button>
+        </div>
+        {form.socialLinks.map((link, idx) => (
+          <div key={idx} className="flex flex-col sm:flex-row gap-2 mb-2">
+            <select value={link.platform} onChange={e => {
+              const updated = [...form.socialLinks];
+              updated[idx] = { ...updated[idx], platform: e.target.value };
+              setForm(f => ({ ...f, socialLinks: updated }));
+            }} className="px-2 py-1 text-sm border border-stone-300 dark:border-stone-600 rounded bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100 sm:w-32">
+              <option value="website">🌐 Website</option>
+              <option value="facebook">📘 Facebook</option>
+              <option value="instagram">📷 Instagram</option>
+              <option value="twitter">🐦 Twitter/X</option>
+              <option value="linkedin">💼 LinkedIn</option>
+              <option value="youtube">▶️ YouTube</option>
+              <option value="tiktok">🎵 TikTok</option>
+              <option value="other">🔗 Anders</option>
+            </select>
+            <input value={link.url} onChange={e => {
+              const updated = [...form.socialLinks];
+              updated[idx] = { ...updated[idx], url: e.target.value };
+              setForm(f => ({ ...f, socialLinks: updated }));
+            }} placeholder="https://..." className="flex-1 px-2 py-1 text-sm border border-stone-300 dark:border-stone-600 rounded bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100" />
+            <input value={link.label} onChange={e => {
+              const updated = [...form.socialLinks];
+              updated[idx] = { ...updated[idx], label: e.target.value };
+              setForm(f => ({ ...f, socialLinks: updated }));
+            }} placeholder="Label (optioneel)" className="sm:w-32 px-2 py-1 text-sm border border-stone-300 dark:border-stone-600 rounded bg-white dark:bg-stone-700 text-stone-900 dark:text-stone-100" />
+            <button type="button" onClick={() => setForm(f => ({ ...f, socialLinks: f.socialLinks.filter((_, i) => i !== idx) }))}
+              className="text-red-500 hover:text-red-700 px-2 text-sm">✕</button>
+          </div>
+        ))}
       </div>
 
       {/* Custom Fields */}

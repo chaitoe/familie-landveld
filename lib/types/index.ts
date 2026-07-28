@@ -110,8 +110,17 @@ export interface Person {
   birthPlaceId?: string;
   deathPlaceId?: string;
   portraitMediaId?: string;
+  portraitUrl?: string;    // Externe of geüploade URL voor portret
   biography: string;      // Markdown
+  socialLinks?: SocialLink[];
   customFields: CustomField[];
+}
+
+// ── Social media link ───────────────────────────────────
+export interface SocialLink {
+  platform: 'facebook' | 'instagram' | 'twitter' | 'linkedin' | 'youtube' | 'tiktok' | 'website' | 'wikipedia' | 'other';
+  url: string;
+  label?: string;
 }
 
 // ── Relatie ────────────────────────────────────────────────

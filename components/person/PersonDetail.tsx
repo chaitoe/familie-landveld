@@ -25,12 +25,12 @@ export function PersonDetail({ person }: PersonDetailProps) {
       {/* Header */}
       <div className="flex flex-col sm:flex-row gap-6">
         {/* Portrait (if available) */}
-        {person.portraitMediaId && (
+        {(person.portraitMediaId || person.portraitUrl) && (
           <div className="flex-shrink-0">
             <img
-              src="/media/kapitein-broos-1870.png"
+              src={person.portraitUrl || (person.portraitMediaId === 'media-kapitein-broos' ? '/media/kapitein-broos-1870.png' : `/media/${person.portraitMediaId}`)}
               alt={`${person.firstName} ${person.lastName}`}
-                className="w-28 h-40 sm:w-36 sm:h-48 object-cover rounded-lg border-2 border-stone-200 dark:border-stone-600 shadow-md sepia-[0.3]"
+              className="w-28 h-40 sm:w-36 sm:h-48 object-cover rounded-lg border-2 border-stone-200 dark:border-stone-600 shadow-md"
             />
           </div>
         )}
@@ -87,6 +87,30 @@ export function PersonDetail({ person }: PersonDetailProps) {
           </dl>
         </div>
       )}
+
+      {/* Social Links */}
+      {person.socialLinks && person.socialLinks.length > 0 && (
+        <div>
+          <h2 className="font-serif text-lg font-semibold text-stone-800 dark:text-stone-200 mb-2">🌐 Social Media & Links</h2>
+          <div className="flex flex-wrap gap-2">
+            {person.socialLinks.map((link, idx) => (
+              <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm bg-stone-100 dark:bg-stone-700 rounded-lg hover:bg-emerald-50 dark:hover:bg-emerald-900/30 transition-colors">
+                <SocialIcon platform={link.platform} />
+                <span className="text-stone-700 dark:text-stone-300">{link.label || link.platform}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
+}
+
+function SocialIcon({ platform }: { platform: string }) {
+  const icons: Record<string, string> = {
+    facebook: '📘', instagram: '📷', twitter: '🐦', linkedin: '💼',
+    youtube: '▶️', tiktok: '🎵', website: '🌐', wikipedia: '📚', other: '🔗',
+  };
+  return <span>{icons[platform] || '🔗'}</span>;
 }
