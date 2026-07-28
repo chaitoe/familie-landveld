@@ -7,6 +7,7 @@
   "isAlive": true,
   "birth": { "year": 1970, "circa": true },
   "birthPlaceId": "place-suriname",
+  "portraitUrl": "/media/raymond-landveld.jpg",
   "biography": "**Raymond Harold Landveld** is een Surinaams politicus. Hij is sinds 16 juli 2025 **minister van Transport, Communicatie en Toerisme (TCT)** van Suriname.\n\nHij studeerde bedrijfseconomie aan de AdeKUS (1994) en was voorheen:\n- Ambassaderaad bij de Verenigde Naties in New York\n- Programmacoördinator bij UNDP\n- Presidentskandidaat namens de BEP (Broederschap en Eenheid in de Politiek) in 2025",
   "customFields": [
     { "key": "occupation", "value": "Minister TCT, Politicus, Diplomaat", "type": "TEXT", "category": "Werk" }
