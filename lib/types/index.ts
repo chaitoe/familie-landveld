@@ -110,7 +110,7 @@ export interface Person {
   birthPlaceId?: string;
   deathPlaceId?: string;
   portraitMediaId?: string;
-  portraitUrl?: string;    // Externe of geüploade URL voor portret
+  portraitUrl?: string;
   biography: string;      // Markdown
   socialLinks?: SocialLink[];
   customFields: CustomField[];
