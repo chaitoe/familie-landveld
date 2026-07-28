@@ -88,7 +88,7 @@ export function PersonEditor({ person, onSaved }: PersonEditorProps) {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {isNew && (
           <>
             <Field label="Bestands-ID" value={form.id} onChange={v => setForm(f => ({ ...f, id: v }))} placeholder="landveld-nieuw" />

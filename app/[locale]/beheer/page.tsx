@@ -58,7 +58,8 @@ export default async function BeheerPage() {
       <div>
         <h2 className="font-serif text-xl font-semibold text-stone-800 dark:text-stone-200 mb-4">Personen</h2>
         <div className="bg-white dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-xl overflow-hidden">
-          <table className="w-full text-sm">
+          <div className="overflow-x-auto">
+          <table className="w-full text-sm min-w-[600px]">
             <thead className="bg-stone-50 dark:bg-stone-700 border-b border-stone-200 dark:border-stone-600">
               <tr>
                 <th className="text-left px-4 py-3 font-medium text-stone-600 dark:text-stone-400">Ref</th>
@@ -93,6 +94,7 @@ export default async function BeheerPage() {
               ))}
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     </div>

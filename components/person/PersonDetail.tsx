@@ -30,7 +30,7 @@ export function PersonDetail({ person }: PersonDetailProps) {
             <img
               src="/media/kapitein-broos-1870.png"
               alt={`${person.firstName} ${person.lastName}`}
-              className="w-36 h-48 object-cover rounded-lg border-2 border-stone-200 dark:border-stone-600 shadow-md sepia-[0.3]"
+                className="w-28 h-40 sm:w-36 sm:h-48 object-cover rounded-lg border-2 border-stone-200 dark:border-stone-600 shadow-md sepia-[0.3]"
             />
           </div>
         )}

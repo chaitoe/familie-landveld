@@ -82,7 +82,7 @@ export function FamilyTree({ persons }: FamilyTreeProps) {
   const defaultViewport = useMemo(() => ({ x: 300, y: 50, zoom: 0.9 }), []);
 
   return (
-    <div className="w-full h-[600px] border border-stone-200 rounded-xl overflow-hidden bg-stone-50">
+    <div className="w-full h-[400px] sm:h-[500px] md:h-[600px] border border-stone-200 dark:border-stone-700 rounded-xl overflow-hidden bg-stone-50 dark:bg-stone-900">
       <ReactFlow
         nodes={nodes}
         edges={edges}

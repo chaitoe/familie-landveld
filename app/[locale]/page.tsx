@@ -14,12 +14,12 @@ export default async function HomePage() {
       {/* ── Hero met Kapitein Broos foto ───────────────── */}
       <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-amber-50 via-stone-100 to-emerald-100 dark:from-stone-800 dark:via-stone-700 dark:to-emerald-900">
         <div className="absolute inset-0 bg-black/10 dark:bg-black/40 z-10" />
-        <div className="relative z-20 flex flex-col md:flex-row items-center gap-8 px-6 py-12 md:py-16">
+        <div className="relative z-20 flex flex-col md:flex-row items-center gap-6 md:gap-8 px-4 sm:px-6 py-8 sm:py-12 md:py-16">
           <div className="flex-shrink-0">
             <img
               src="/media/kapitein-broos-1870.png"
               alt="Kapitein Broos, circa 1870 — foto door S. del Castilho"
-              className="w-40 h-52 md:w-48 md:h-64 object-cover rounded-xl border-4 border-white/20 dark:border-white/20 shadow-2xl sepia-[0.4]"
+              className="w-32 h-44 sm:w-40 sm:h-52 md:w-48 md:h-64 object-cover rounded-xl border-4 border-white/20 dark:border-white/20 shadow-2xl sepia-[0.4]"
             />
             <p className="text-center text-sm text-stone-400 dark:text-stone-400 mt-2 font-medium">Kapitein Broos, ca. 1870</p>
           </div>
