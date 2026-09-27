@@ -3,13 +3,57 @@
     "id": "place-ghana",
     "name": "Ghana",
     "type": "COUNTRY",
-    "coordinates": { "lat": 7.9465, "lng": -1.0232 },
+    "coordinates": { "lat": 5.0847, "lng": -1.3503 },
     "historicalNames": ["Goudkust", "Gold Coast"],
     "country": "Ghana",
     "description": "Vanuit de Goudkust (het huidige Ghana) werden tussen 1650 en 1800 tienduizenden Afrikanen naar Suriname verscheept als onderdeel van de trans-Atlantische slavenhandel. De voorouders van de Brooskampers — waaronder vermoedelijk Ma Amba — kwamen oorspronkelijk uit deze regio.",
-    "significance": "Herkomstgebied van de voorouders. Ma Amba en andere stamouders werden waarschijnlijk vanuit de Goudkust naar Suriname gebracht.",
+    "significance": "Herkomstgebied en vertrekpunt van de trans-Atlantische route. Ma Amba en andere stamouders werden waarschijnlijk vanuit de Goudkust verscheept.",
     "period": "1650–1800",
     "relatedPersonIds": ["landveld-ma-amba"]
+  },
+  {
+    "id": "place-freetown",
+    "name": "Freetown",
+    "type": "CITY",
+    "coordinates": { "lat": 8.4844, "lng": -13.2344 },
+    "historicalNames": ["Freetown"],
+    "country": "Sierra Leone",
+    "description": "Freetown ligt aan de kust van Sierra Leone. Op de scheepvaartroute langs West-Afrika was dit een ankerplaats waar schepen proviand en water konden inslaan voordat ze verder naar het noorden voeren.",
+    "significance": "Mogelijke tussenstop op de kustroute van de Goudkust naar Kaapverdië.",
+    "period": "1650–1814"
+  },
+  {
+    "id": "place-dakar",
+    "name": "Dakar",
+    "type": "CITY",
+    "coordinates": { "lat": 14.7167, "lng": -17.4677 },
+    "historicalNames": ["Dakar"],
+    "country": "Senegal",
+    "description": "Dakar ligt op het Kaap-Vert-schiereiland, het meest westelijke punt van Afrika. Vlakbij ligt het eiland Gorée, dat in de slavenhandel een doorvoerhaven was voor tot slaaf gemaakten.",
+    "significance": "Mogelijke ankerplaats op de kustroute; nabij Gorée, een punt in de trans-Atlantische slavenhandel.",
+    "period": "1650–1814"
+  },
+  {
+    "id": "place-kaapverdie",
+    "name": "Kaapverdië",
+    "type": "COUNTRY",
+    "coordinates": { "lat": 14.9167, "lng": -23.5083 },
+    "historicalNames": ["Cape Verde", "Cabo Verde"],
+    "country": "Kaapverdië",
+    "description": "De Kaapverdische eilanden lagen op de route van de trans-Atlantische slavenhandel. WIC-schepen deden hier aan voor proviand (water en voedsel) voordat ze de lange oversteek naar het Caribisch gebied maakten.",
+    "significance": "Mogelijke tussenstop (bevoorrading) op de route van de Goudkust naar Suriname.",
+    "period": "1650–1814"
+  },
+  {
+    "id": "place-curacao",
+    "name": "Curaçao",
+    "type": "COUNTRY",
+    "coordinates": { "lat": 12.1084, "lng": -68.9335 },
+    "historicalNames": ["Curaçao", "Kòrsou"],
+    "country": "Curaçao",
+    "description": "Curaçao was het belangrijkste slavendepot van de West-Indische Compagnie in het Caribisch gebied. Tot slaaf gemaakten werden hier soms overgeslagen, verkocht of 'geseasoned' voordat ze doorreisden naar plantagekolonies zoals Suriname.",
+    "significance": "Overslaghaven op de route naar Suriname. Veel, maar niet alle, schepen deden Curaçao aan.",
+    "period": "1650–1863"
   },
   {
     "id": "place-suriname",
@@ -19,7 +63,7 @@
     "historicalNames": ["Nederlands-Guyana", "Suriname"],
     "country": "Suriname",
     "description": "Suriname was van 1667 tot 1975 een Nederlandse kolonie. De economie draaide op plantage-landbouw (suiker, koffie, katoen) met slaafgemaakte Afrikanen. Na de afschaffing van de slavernij in 1863 vestigden de Brooskampers zich als vrije marrons in het binnenland.",
-    "significance": "Thuisland van de familie Landveld. De Brooskampers ontsnapten van de plantages en bouwden een vrije marron-gemeenschap op.",
+    "significance": "Eindbestemming van de trans-Atlantische route. Thuisland van de familie Landveld. De Brooskampers ontsnapten van de plantages en bouwden een vrije marron-gemeenschap op.",
     "period": "1667–heden",
     "relatedPersonIds": ["landveld-ma-amba", "landveld-broos"]
   },

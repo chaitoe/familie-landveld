@@ -41,10 +41,31 @@ function createColoredIcon(type: string): L.DivIcon {
 // ── Migratieroute: Ghana → Suriname → plantages ───────────
 const migrationRoutes: { label: string; color: string; dash: string; path: [number, number][] }[] = [
   {
-    label: 'Trans-Atlantische route (Goudkust → Suriname)',
+    label: 'Trans-Atlantische route (Goudkust → Suriname, via Kaapverdië & Curaçao)',
     color: '#dc2626',
     dash: '12 6',
-    path: [[7.9465, -1.0232], [3.9193, -56.0278]],
+    path: [
+      // West-Afrikaanse kust (Goudkust → Kaapverdië)
+      [5.0847, -1.3503],   // Elmina, Ghana — vertrekpunt
+      [4.74, -2.09],       // Cape Three Points, Ghana
+      [5.25, -4.02],       // Abidjan, Ivoorkust
+      [4.95, -6.08],       // Sassandra, Ivoorkust
+      [6.31, -10.81],      // Monrovia, Liberia
+      [8.48, -13.23],      // Freetown, Sierra Leone
+      [9.51, -13.71],      // Conakry, Guinee
+      [11.86, -15.60],     // Bissau, Guinee-Bissau
+      [13.45, -16.58],     // Banjul, Gambia
+      [14.72, -17.47],     // Dakar, Senegal
+      [14.92, -23.51],     // Praia, Kaapverdië — bevoorrading
+      // Oversteek Atlantische Oceaan
+      [12.11, -68.93],     // Willemstad, Curaçao — overslag
+      // Zuid-Amerikaanse kust (Curaçao → Suriname)
+      [10.60, -66.93],     // La Guaira, Venezuela
+      [10.47, -64.18],     // Cumaná, Venezuela
+      [10.65, -62.20],     // Güiria, Venezuela (bij Trinidad)
+      [6.80, -58.16],      // Georgetown, Guyana
+      [5.85, -55.20],      // Paramaribo, Suriname — aankomst
+    ],
   },
   {
     label: 'Plantage Rorac → Kaaimangrasi (Brooskampers na 1863)',
@@ -73,8 +94,6 @@ function FitBounds() {
     const coords = places
       .filter(p => p.coordinates)
       .map(p => [p.coordinates!.lat, p.coordinates!.lng] as [number, number]);
-    // Include Ghana for full route view
-    coords.push([7.9465, -1.0232]);
     const bounds = L.latLngBounds(coords);
     if (bounds.isValid()) {
       map.fitBounds(bounds, { padding: [50, 50] });

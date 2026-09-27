@@ -7,7 +7,7 @@
   "isAlive": false,
   "birth": { "year": 1780, "circa": true, "after": false, "before": false },
   "birthPlaceId": "place-ghana",
-  "biography": "**Ma Amba** is de stamgrootmoeder van de Brooskampers. Zij werd geboren in **Ghana (Afrika)** en werd als tot slaaf gemaakte naar Suriname gebracht. Haar dochter Ma Uwa was de moeder van Kapitein Broos. Ma Amba overleed vóór de emancipatie van 1863.\n\nZij is de oudst bekende voorouder van de families Babel, Landveld, Meiland en Deekman.",
+  "biography": "**Ma Amba** is de stamgrootmoeder van de Brooskampers. Zij werd geboren in **Ghana (Afrika)** en werd als tot slaaf gemaakte naar Suriname gebracht. Haar dochter Ma Uwa was de moeder van Kapitein Broos. Ma Amba overleed vóór de emancipatie van 1863.\n\nZij is de oudst bekende voorouder van de families Babel, Landveld, Meiland en Deekman.\n\n**Vermoedelijke overtocht:** In het archief van de Middelburgsche Commercie Compagnie (MCC) is één directe slavenreis van de Guinese kust naar Suriname in haar periode te vinden: het fregat **Standvastigheid** onder kaptein **Hermanus Uding**. Vertrek uit fort Rammekens op 19 augustus 1802, aankomst in Suriname op 24 oktober 1803 (281 ingekocht, 257 verkocht). Tussen 1798 en 1802 voer er door de Britse blokkade geen MCC-schip uit Nederland, en na 1803 volgde er geen reis meer. Het gaat om een **mogelijke** overtocht — geen bewijs, want de registers noteerden geen namen.",
   "customFields": [
     { "key": "africanOrigin", "value": "Ghana", "type": "TEXT", "category": "Slavernij" },
     { "key": "srananName", "value": "Ma Amba", "type": "TEXT", "category": "Persoonlijk" }
