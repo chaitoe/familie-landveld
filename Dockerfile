@@ -36,6 +36,9 @@ COPY --from=builder /app/data ./data
 RUN npm ci --omit=dev && \
     npm cache clean --force
 
+# Give nextjs user write access to data directory (API writes persons here)
+RUN chown -R nextjs:nodejs /app/data
+
 USER nextjs
 
 EXPOSE 3000
