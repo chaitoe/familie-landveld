@@ -50,17 +50,13 @@ export default function KaartPage() {
         </p>
       </div>
 
-      {/* ── Scheepsjournaal ─────────────────────────────── */}
-      <section className="space-y-3">
-        <div>
-          <h2 className="font-serif text-xl font-bold text-stone-900 dark:text-stone-100">📖 Scheepsjournaal van de Standvastigheid</h2>
-          <p className="text-sm text-stone-500 dark:text-stone-400 mt-1">
-            Het originele handgeschreven logboek van de driehoeksreis (1802–1803), bewaard in het Zeeuws Archief (NL-MdbZA 20 1077).
-            Kaptein Hermanus Uding noteerde dagelijks de wind, koers, positie, barometerstand en het weer.
-          </p>
-        </div>
-        <LogbookViewer pages={52} basePath="/media/LogBook_NL-MdbZA_20_1077" />
-      </section>
+      {/* ── Reisroute ────────────────────────────────────── */}
+      <div>
+        <h2 className="font-serif text-xl font-bold text-stone-900 dark:text-stone-100">{'\u{1F5FA}\u{FE0F}'} Reisroute</h2>
+        <p className="text-sm text-stone-500 dark:text-stone-400 mt-1">
+          De driehoeksreis van de Standvastigheid (1802–1803): van Fort Rammekens langs de Goudkust naar Suriname.
+        </p>
+      </div>
 
       <PlantationMapDynamic />
 
@@ -92,6 +88,18 @@ export default function KaartPage() {
           ))}
         </div>
       </div>
+
+      {/* ── Scheepsjournaal ─────────────────────────────── */}
+      <section className="space-y-3">
+        <div>
+          <h2 className="font-serif text-xl font-bold text-stone-900 dark:text-stone-100">{'\u{1F4D6}'} Scheepsjournaal van de Standvastigheid</h2>
+          <p className="text-sm text-stone-500 dark:text-stone-400 mt-1">
+            Het originele handgeschreven logboek van de driehoeksreis (1802–1803), bewaard in het Zeeuws Archief (NL-MdbZA 20 1077).
+            Kaptein Hermanus Uding noteerde dagelijks de wind, koers, positie, barometerstand en het weer.
+          </p>
+        </div>
+        <LogbookViewer pages={52} basePath="/media/LogBook_NL-MdbZA_20_1077" />
+      </section>
     </div>
   );
 }
