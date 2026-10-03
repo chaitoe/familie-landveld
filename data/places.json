@@ -1,5 +1,38 @@
 [
   {
+    "id": "place-fort-rammekens",
+    "name": "Fort Rammekens",
+    "type": "CITY",
+    "coordinates": { "lat": 51.4516, "lng": 3.6500 },
+    "historicalNames": ["Fort Rammekens", "Ritthem"],
+    "country": "Nederland",
+    "description": "Fort Rammekens bij Vlissingen (Zeeland) was de vertrekhaven van de MCC-schepen. Van hier vertrok de Standvastigheid op 19 augustus 1802 voor haar driehoeksreis.",
+    "significance": "Vertrekpunt van de driehoeksreis van de Standvastigheid (1802–1803).",
+    "period": "1802"
+  },
+  {
+    "id": "place-liberia",
+    "name": "Liberia",
+    "type": "COUNTRY",
+    "coordinates": { "lat": 6.31, "lng": -10.81 },
+    "historicalNames": ["Peperkust", "Grain Coast"],
+    "country": "Liberia",
+    "description": "Liberia (destijds de Peperkust) was een stopover op de Guinese kust waar de Standvastigheid in 1802–1803 handelswaar ruilden voor tot slaaf gemaakten.",
+    "significance": "Stopover op de Guinese kust van de Standvastigheid (1802–1803).",
+    "period": "1802–1803"
+  },
+  {
+    "id": "place-ivoorkust",
+    "name": "Ivoorkust",
+    "type": "COUNTRY",
+    "coordinates": { "lat": 5.36, "lng": -4.01 },
+    "historicalNames": ["Côte d'Ivoire", "Tandkust"],
+    "country": "Ivoorkust",
+    "description": "Ivoorkust (destijds de Tandkust) was een stopover op de Guinese kust van de Standvastigheid in 1802–1803.",
+    "significance": "Stopover op de Guinese kust van de Standvastigheid (1802–1803).",
+    "period": "1802–1803"
+  },
+  {
     "id": "place-ghana",
     "name": "Ghana",
     "type": "COUNTRY",
@@ -10,50 +43,6 @@
     "significance": "Herkomstgebied en vertrekpunt van de trans-Atlantische route. Ma Amba en andere stamouders werden waarschijnlijk vanuit de Goudkust verscheept.",
     "period": "1650–1800",
     "relatedPersonIds": ["landveld-ma-amba"]
-  },
-  {
-    "id": "place-freetown",
-    "name": "Freetown",
-    "type": "CITY",
-    "coordinates": { "lat": 8.4844, "lng": -13.2344 },
-    "historicalNames": ["Freetown"],
-    "country": "Sierra Leone",
-    "description": "Freetown ligt aan de kust van Sierra Leone. Op de scheepvaartroute langs West-Afrika was dit een ankerplaats waar schepen proviand en water konden inslaan voordat ze verder naar het noorden voeren.",
-    "significance": "Mogelijke tussenstop op de kustroute van de Goudkust naar Kaapverdië.",
-    "period": "1650–1814"
-  },
-  {
-    "id": "place-dakar",
-    "name": "Dakar",
-    "type": "CITY",
-    "coordinates": { "lat": 14.7167, "lng": -17.4677 },
-    "historicalNames": ["Dakar"],
-    "country": "Senegal",
-    "description": "Dakar ligt op het Kaap-Vert-schiereiland, het meest westelijke punt van Afrika. Vlakbij ligt het eiland Gorée, dat in de slavenhandel een doorvoerhaven was voor tot slaaf gemaakten.",
-    "significance": "Mogelijke ankerplaats op de kustroute; nabij Gorée, een punt in de trans-Atlantische slavenhandel.",
-    "period": "1650–1814"
-  },
-  {
-    "id": "place-kaapverdie",
-    "name": "Kaapverdië",
-    "type": "COUNTRY",
-    "coordinates": { "lat": 14.9167, "lng": -23.5083 },
-    "historicalNames": ["Cape Verde", "Cabo Verde"],
-    "country": "Kaapverdië",
-    "description": "De Kaapverdische eilanden lagen op de route van de trans-Atlantische slavenhandel. WIC-schepen deden hier aan voor proviand (water en voedsel) voordat ze de lange oversteek naar het Caribisch gebied maakten.",
-    "significance": "Mogelijke tussenstop (bevoorrading) op de route van de Goudkust naar Suriname.",
-    "period": "1650–1814"
-  },
-  {
-    "id": "place-curacao",
-    "name": "Curaçao",
-    "type": "COUNTRY",
-    "coordinates": { "lat": 12.1084, "lng": -68.9335 },
-    "historicalNames": ["Curaçao", "Kòrsou"],
-    "country": "Curaçao",
-    "description": "Curaçao was het belangrijkste slavendepot van de West-Indische Compagnie in het Caribisch gebied. Tot slaaf gemaakten werden hier soms overgeslagen, verkocht of 'geseasoned' voordat ze doorreisden naar plantagekolonies zoals Suriname.",
-    "significance": "Overslaghaven op de route naar Suriname. Veel, maar niet alle, schepen deden Curaçao aan.",
-    "period": "1650–1863"
   },
   {
     "id": "place-suriname",

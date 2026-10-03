@@ -3,6 +3,7 @@
 import dynamic from 'next/dynamic';
 import { getAllPlaces } from '@/lib/data/places';
 import type { Place } from '@/lib/types';
+import { LogbookViewer } from '@/components/LogbookViewer';
 
 const PlantationMapDynamic = dynamic(
   () => import('@/components/map/PlantationMap').then(mod => ({ default: mod.PlantationMap })),
@@ -49,6 +50,18 @@ export default function KaartPage() {
         </p>
       </div>
 
+      {/* ── Scheepsjournaal ─────────────────────────────── */}
+      <section className="space-y-3">
+        <div>
+          <h2 className="font-serif text-xl font-bold text-stone-900 dark:text-stone-100">📖 Scheepsjournaal van de Standvastigheid</h2>
+          <p className="text-sm text-stone-500 dark:text-stone-400 mt-1">
+            Het originele handgeschreven logboek van de driehoeksreis (1802–1803), bewaard in het Zeeuws Archief (NL-MdbZA 20 1077).
+            Kaptein Hermanus Uding noteerde dagelijks de wind, koers, positie, barometerstand en het weer.
+          </p>
+        </div>
+        <LogbookViewer pages={52} basePath="/media/LogBook_NL-MdbZA_20_1077" />
+      </section>
+
       <PlantationMapDynamic />
 
       {/* ── Legenda ──────────────────────────────────────── */}
@@ -64,7 +77,7 @@ export default function KaartPage() {
       {/* ── Routes legenda ───────────────────────────────── */}
       <div className="flex flex-wrap gap-4 text-xs text-stone-500 dark:text-stone-400 bg-stone-50 dark:bg-stone-800/50 rounded-lg p-3">
         <span className="font-medium text-stone-700 dark:text-stone-300">🛤️ Routes:</span>
-        <span className="flex items-center gap-1"><span className="w-8 h-0.5 rounded" style={{ background: '#dc2626', opacity: 0.7 }} /> Trans-Atlantisch (via Kaapverdië & Curaçao)</span>
+        <span className="flex items-center gap-1"><span className="w-8 h-0.5 rounded" style={{ background: '#dc2626', opacity: 0.7 }} /> Standvastigheid (NL → Goudkust → Suriname)</span>
         <span className="flex items-center gap-1"><span className="w-8 h-0.5 rounded" style={{ background: '#d97706', opacity: 0.7 }} /> Rorac → Kaaimangrasi</span>
         <span className="flex items-center gap-1"><span className="w-8 h-0.5 rounded" style={{ background: '#059669', opacity: 0.7 }} /> Kaaimangrasi → Surnaukreek</span>
         <span className="flex items-center gap-1"><span className="w-8 h-0.5 rounded" style={{ background: '#2563eb', opacity: 0.7 }} /> Paramaribo ↔ Rorac</span>
